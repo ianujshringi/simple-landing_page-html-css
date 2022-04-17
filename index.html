@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+
+            <nav>
+                <svg class="close" xmlns="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                    <polygon fill="black" points="96,14 82,0 48,34 14,0 0,14 34,48 0,82 14,96 48,62 82,96 96,82 62,48 "/>
+                </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                </ul>
+                <!-- <svg class="close" viewBox="0 0 24 24" fill="'none"
+                    <path d="M2 2C10.0222 2 8.08879 2.58649 6.4443" -->
+            </nav>
+            <svg class="menu" viewBox="0 0 50 24" xmlns="http://www.w3.org/2000/svg" fill="0X0000" viewBox="0 0 24 24">
+                <path
+                    d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+            </svg>
+
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence on the court.</h1>
+            <p class="subhead">A shoe built with purpose to take your game to the next level.</p>
+            <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="" 0 0 16 132" fill="none">
+                <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+            </svg>
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem possimus illum hic aperiam necessitatibus in numquam cumque sint. Ab?</p>
+                </div>
+                <img src="assets/shoes-image-2.jpg" alt="another shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem possimus illum hic aperiam necessitatibus in numquam cumque sint. Ab?</p>
+                </div>
+                <img src="assets/shoes-image-3.jpg" alt="another shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem possimus illum hic aperiam necessitatibus in numquam cumque sint. Ab?</p>
+                </div>
+                <img src="assets/shoes-image-4.jpg" alt="another shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem possimus illum hic aperiam necessitatibus in numquam cumque sint. Ab?</p>
+                </div>
+                <img src="assets/shoes-image-1.jpg" alt="another shoe">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+
+        menu.addEventListener('click', () => {
+            document.querySelector('nav').classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            document.querySelector('nav').classList.remove('open-nav')
+        })
+    </script>
+</body>
+
+</html>
